@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1'
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'django-news-feed.herokuapp.com'
+    'https://django-news-feed.herokuapp.com'
 ]
 
 
@@ -93,6 +93,18 @@ DATABASES = {
     }
 }
 
+# Я обязательно разберусь с переменными среды
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': 'admin',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
