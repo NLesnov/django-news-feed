@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome page</title>
+</head>
+<body>
+<h1>Доступные ссылки</h1>
+<ul>
+    {% for title, link in available_urls.items %}
+        <li><a href="/{{ link }}/">{{ title }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
