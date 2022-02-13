@@ -1,3 +1,5 @@
+from django.http import HttpResponse
+from django.template import loader
 from rest_framework.permissions import AllowAny
 from rest_framework.viewsets import ModelViewSet
 
@@ -23,5 +25,17 @@ class NewsFeedViewSet(ModelViewSet):
         serializer.save(author=self.request.user)
 
 
-
+def index(request):
+    available_urls = dict(
+        sign_up='sign_up',
+        login='login',
+        logout='logout',
+        feed='feed',
+        post_details='feed/0',
+    )
+    template = loader.get_template('index.html')
+    context = {
+        'available_urls': available_urls,
+    }
+    return HttpResponse(template.render(context, request))
 
