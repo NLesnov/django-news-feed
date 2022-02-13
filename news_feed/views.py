@@ -27,9 +27,9 @@ class NewsFeedViewSet(ModelViewSet):
 
 def index(request):
     available_urls = dict(
-        sign_up='sign_up',
-        login='login',
-        logout='logout',
+        sign_up='account/sign_up',
+        login='account/login',
+        logout='account/logout',
         feed='feed',
         post_details='feed/0',
     )
