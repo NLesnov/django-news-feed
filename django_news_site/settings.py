@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-nc*f@!ewd#+9raakxxpxr=ihk$aj#0r)93)6-*dtf)8%-hec-(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-news-feed.herokuapp.com',]
+ALLOWED_HOSTS = [
+    'django-news-feed.herokuapp.com',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -78,8 +81,12 @@ WSGI_APPLICATION = 'django_news_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd2f9faame2kvv9',
+        'USER': 'zwgkvdwkuirtzy',
+        'PASSWORD': '60911cbd836ea819f0d33ac71425e4045db010b1f357b062048890445a92dc30',
+        'HOST': 'ec2-34-250-92-138.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
