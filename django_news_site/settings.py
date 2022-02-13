@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nc*f@!ewd#+9raakxxpxr=ihk$aj#0r)93)6-*dtf)8%-hec-(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-news-feed.herokuapp.com',]
 
 
 # Application definition
