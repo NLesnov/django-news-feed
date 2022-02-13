@@ -31,7 +31,7 @@ def index(request):
         login='account/login',
         logout='account/logout',
         feed='feed',
-        post_details='feed/0',
+        post_details='feed/1',
     )
     template = loader.get_template('index.html')
     context = {
