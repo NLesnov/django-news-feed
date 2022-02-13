@@ -29,6 +29,9 @@ ALLOWED_HOSTS = [
     'django-news-feed.herokuapp.com',
     '127.0.0.1'
 ]
+CSRF_TRUSTED_ORIGINS = [
+    'django-news-feed.herokuapp.com'
+]
 
 
 # Application definition
